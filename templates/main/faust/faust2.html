@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block content %}
+<link rel="stylesheet" type="text/css" href="{% static 'faust/faustcss.css' %}">
+<div id="exp-wrap">
+    <div id="explanation">
+        <p style="font-size:40px; margin-bottom:3px;">Faust 2</p>
+        <p> 16 * 16 inch</p>
+        <p>©Yoonha Byun 2017</p>
+    </div>
+
+    <div id="faust">
+        <img src="{%static 'faust/faust2.jpg' %}" width="84%">
+    </div>
+
+    <div id="left-right-button">
+        <div id="left">
+            <a href="#">＜</a>
+        </div>
+        <div id="right">
+            <a href="#">＞</a>
+        </div>
+    </div>
+
+
+</div>
+
+<div id="content">
+  <div class="content-item">
+      <div class="image">
+        <a href="{% url 'main:faust1' %}"><img src="{% static 'faust/faust1.jpg' %}" width="100%"  alt="faust1"></a>
+        <div class="text">
+          <h2>Faust 1</h2>
+          <h3>&mdash; view &mdash;</h3>
+        </div>
+      </div>
+      <div class="image">
+        <a href="{% url 'main:faust2' %}"><img src="{% static 'faust/faust2.jpg' %}" width="100%" alt="faust2"></a>
+        <div class="text">
+          <p>hello123</p>
+        </div>
+      </div>
+      <div class="image">
+        <a href="{% url 'main:faust3' %}"><img src="{% static 'faust/faust3.jpg' %}" width="100%" alt="faust3"></a>
+        <div class="text">
+          <p>hello</p>
+        </div>
+      </div>
+      <div class="image">
+        <a href="{% url 'main:faust4' %}"><img src="{% static 'faust/faust4.jpg' %}" width="100%" alt="faust4"></a>
+        <div class="text">
+          <p>hello</p>
+        </div>
+      </div>
+      <div class="image">
+        <a href="{% url 'main:faust5' %}"><img src="{% static 'faust/faust5.jpg' %}" width="100%" alt="faust5"></a>
+        <div class="text">
+          <p>hello</p>
+        </div>
+      </div>
+      <div class="image">
+        <a href="{% url 'main:faust6' %}"><img src="{% static 'faust/faust6.jpg' %}" width="100%" alt="faust6"></a>
+        <div class="text">
+          <p>hello</p>
+        </div>
+      </div>
+      <div class="image">
+        <a href="{% url 'main:faust7' %}"><img src="{% static 'faust/faust7.jpg' %}" width="100%" alt="faust7"></a>
+        <div class="text">
+          <p>hello</p>
+        </div>
+      </div>
+      <div class="image">
+        <a href="{% url 'main:faust8' %}"><img src="{% static 'faust/faust8.jpg' %}" width="100%" alt="faust8"></a>
+        <div class="text">
+          <p>hello</p>
+        </div>
+      </div>
+      <div class="image">
+        <a href="{% url 'main:faust9' %}"><img src="{% static 'faust/faust9.jpg' %}" width="100%" alt="faust9"></a>
+        <div class="text">
+          <p>hello</p>
+        </div>
+      </div>
+  </div>
+</div>
+{% endblock %}

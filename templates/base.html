@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+{% load static %}
+<head>
+  <meta charset="UTF-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@367&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="{% static 'faust/papercut.css' %}">
+    <!--
+    font-family:'Raleway', sans-serif;
+    -->
+  <style>
+    * {
+    font-family: "proxima-nova";
+    font-weight:100;
+    }
+    @font-face{font-family:proxima-nova;src:url(https://use.typekit.net/af/154cda/00000000000000007735e601/30/l?subset_id=2&fvd=n1&v=3) format("woff2"),url(https://use.typekit.net/af/154cda/00000000000000007735e601/30/d?subset_id=2&fvd=n1&v=3) format("woff"),url(https://use.typekit.net/af/154cda/00000000000000007735e601/30/a?subset_id=2&fvd=n1&v=3) format("opentype");font-weight:100;font-style:normal;font-display:auto;}@font-face{font-family:proxima-nova;src:url(https://use.typekit.net/af/1be3c2/00000000000000007735e606/30/l?subset_id=2&fvd=n3&v=3) format("woff2"),url(https://use.typekit.net/af/1be3c2/00000000000000007735e606/30/d?subset_id=2&fvd=n3&v=3) format("woff"),url(https://use.typekit.net/af/1be3c2/00000000000000007735e606/30/a?subset_id=2&fvd=n3&v=3) format("opentype");font-weight:300;font-style:normal;font-display:auto;}@font-face{font-family:proxima-nova;src:url(https://use.typekit.net/af/efe4a5/00000000000000007735e609/30/l?subset_id=2&fvd=n4&v=3) format("woff2"),url(https://use.typekit.net/af/efe4a5/00000000000000007735e609/30/d?subset_id=2&fvd=n4&v=3) format("woff"),url(https://use.typekit.net/af/efe4a5/00000000000000007735e609/30/a?subset_id=2&fvd=n4&v=3) format("opentype");font-weight:400;font-style:normal;font-display:auto;}@font-face{font-family:proxima-nova;src:url(https://use.typekit.net/af/23e139/00000000000000007735e605/30/l?subset_id=2&fvd=n5&v=3) format("woff2"),url(https://use.typekit.net/af/23e139/00000000000000007735e605/30/d?subset_id=2&fvd=n5&v=3) format("woff"),url(https://use.typekit.net/af/23e139/00000000000000007735e605/30/a?subset_id=2&fvd=n5&v=3) format("opentype");font-weight:500;font-style:normal;font-display:auto;}@font-face{font-family:proxima-nova;src:url(https://use.typekit.net/af/78aca8/00000000000000007735e60d/30/l?subset_id=2&fvd=n6&v=3) format("woff2"),url(https://use.typekit.net/af/78aca8/00000000000000007735e60d/30/d?subset_id=2&fvd=n6&v=3) format("woff"),url(https://use.typekit.net/af/78aca8/00000000000000007735e60d/30/a?subset_id=2&fvd=n6&v=3) format("opentype");font-weight:600;font-style:normal;font-display:auto;}@font-face{font-family:proxima-nova;src:url(https://use.typekit.net/af/7283cd/00000000000000007735e608/30/l?subset_id=2&fvd=i1&v=3) format("woff2"),url(https://use.typekit.net/af/7283cd/00000000000000007735e608/30/d?subset_id=2&fvd=i1&v=3) format("woff"),url(https://use.typekit.net/af/7283cd/00000000000000007735e608/30/a?subset_id=2&fvd=i1&v=3) format("opentype");font-weight:100;font-style:italic;font-display:auto;}@font-face{font-family:proxima-nova;src:url(https://use.typekit.net/af/2555e1/00000000000000007735e603/30/l?subset_id=2&fvd=n7&v=3) format("woff2"),url(https://use.typekit.net/af/2555e1/00000000000000007735e603/30/d?subset_id=2&fvd=n7&v=3) format("woff"),url(https://use.typekit.net/af/2555e1/00000000000000007735e603/30/a?subset_id=2&fvd=n7&v=3) format("opentype");font-weight:700;font-style:normal;font-display:auto;}@font-face{font-family:proxima-nova;src:url(https://use.typekit.net/af/8738d8/00000000000000007735e611/30/l?subset_id=2&fvd=n8&v=3) format("woff2"),url(https://use.typekit.net/af/8738d8/00000000000000007735e611/30/d?subset_id=2&fvd=n8&v=3) format("woff"),url(https://use.typekit.net/af/8738d8/00000000000000007735e611/30/a?subset_id=2&fvd=n8&v=3) format("opentype");font-weight:800;font-style:normal;font-display:auto;}@font-face{font-family:proxima-nova;src:url(https://use.typekit.net/af/3322cc/00000000000000007735e616/30/l?subset_id=2&fvd=i4&v=3) format("woff2"),url(https://use.typekit.net/af/3322cc/00000000000000007735e616/30/d?subset_id=2&fvd=i4&v=3) format("woff"),url(https://use.typekit.net/af/3322cc/00000000000000007735e616/30/a?subset_id=2&fvd=i4&v=3) format("opentype");font-weight:400;font-style:italic;font-display:auto;}@font-face{font-family:proxima-nova;src:url(https://use.typekit.net/af/e3ed45/00000000000000007735e602/30/l?subset_id=2&fvd=n9&v=3) format("woff2"),url(https://use.typekit.net/af/e3ed45/00000000000000007735e602/30/d?subset_id=2&fvd=n9&v=3) format("woff"),url(https://use.typekit.net/af/e3ed45/00000000000000007735e602/30/a?subset_id=2&fvd=n9&v=3) format("opentype");font-weight:900;font-style:normal;font-display:auto;}@font-face{font-family:proxima-nova;src:url(https://use.typekit.net/af/4de20a/00000000000000007735e604/30/l?subset_id=2&fvd=i7&v=3) format("woff2"),url(https://use.typekit.net/af/4de20a/00000000000000007735e604/30/d?subset_id=2&fvd=i7&v=3) format("woff"),url(https://use.typekit.net/af/4de20a/00000000000000007735e604/30/a?subset_id=2&fvd=i7&v=3) format("opentype");font-weight:700;font-style:italic;font-display:auto;}
+  </style>
+  {% block head %}
+  {% endblock %}
+</head>
+
+
+<body>
+<!-- 기본 템플릿 안에 삽입될 내용 Start -->
+<div id="header">
+  <div id="logo">
+    <a href="{%url 'main:home'%}">YOONHA BYUN</a>
+  </div>
+  <div id="menu">
+    <div class="menu-item"><a href="{%url 'main:home'%}">PAPERCUTS</a></div>
+    <div class="menu-item"><a href="{%url 'main:collage'%}">COLLAGE</a></div>
+    <div class="menu-item"><a href="{%url 'main:painting'%}">PAINTING</a></div>
+    <div class="menu-item"><a href="{%url 'main:pastel'%}">PASTEL</a></div>
+    <div class="menu-item"><a href="{%url 'main:digital'%}">DIGITAL</a></div>
+    <div class="menu-item"><a href="{%url 'main:artist_note'%}">ARTIST NOTE</a></div>
+    <div class="menu-item"><a href="{%url 'main:about'%}">ABOUT</a></div>
+  </div>
+</div>
+{% block content %}
+{% endblock %}
+<!-- 기본 템플릿 안에 삽입될 내용 End -->
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block content %}
+<link rel="stylesheet" type="text/css" href="{% static 'collage/collagecss.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'collage/collage.css' %}">
+
+<div id="exp-wrap">
+    <div id="explanation">
+        <p style="font-size:40px; margin-bottom:3px;">빵</p>
+    </div>
+
+    <div id="collage">
+        <img src="{%static 'pastel/pastel1.jpeg' %}" width="84%">
+    </div>
+
+    <div id="left-right-button">
+        <div id="left">
+            <a href="#">&lt;</a>
+        </div>
+        <div id="right">
+            <a href="#">&gt;</a>
+        </div>
+    </div>
+
+
+</div>
+
+<div id="content-whole">
+    <div id="content-left">
+  <div class="content-item">
+      <div class="image">
+        <a href="{% url 'main:pastel1' %}"><img src="{% static 'pastel/pastel1.jpeg' %}" width="100%"  alt="pastel1"></a>
+        <div class="text">
+            <a href="{% url 'main:pastel1' %}">
+                <h2>빵</h2>
+                <h3>&mdash; view &mdash;</h3>
+            </a>
+        </div>
+      </div>
+  </div>
+</div>
+
+</div>
+{% endblock %}

@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block content %}
+<link rel="stylesheet" type="text/css" href="{% static 'collage/collage.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'collage/collagecss.css' %}">
+<body>
+
+<div id="content-whole">
+    <div id="content-left">
+  <div class="content-item">
+      <div class="image">
+        <a href="{% url 'main:pastel1' %}"><img src="{% static 'pastel/pastel1.jpeg' %}" width="100%"  alt="pastel1"></a>
+        <div class="text">
+            <a href="{% url 'main:pastel1' %}">
+                <h2>빵</h2>
+                <h3>&mdash; view &mdash;</h3>
+            </a>
+        </div>
+      </div>
+  </div>
+</div>
+
+</div>
+
+</body>
+{% endblock %}

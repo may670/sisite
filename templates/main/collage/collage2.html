@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block content %}
+<link rel="stylesheet" type="text/css" href="{% static 'collage/collagecss.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'collage/collage.css' %}">
+<div id="exp-wrap">
+    <div id="explanation">
+        <p style="font-size:40px; margin-bottom:3px;">쏟아지는 빛</p>
+        <p style='width:100%;line-height:1.6em;'> 소녀가 든 것은 빛이 가득한 꽃다발이었다. 소녀가 발을 내딛어 걸어갈 때마다 꽃에서 떨어진 빛들이 땅에 수북이 깔려 길을 만들었다. 소녀는 어둠속을 걸어갔지만, 땅에 깔린 빛들이 주변을 비추어 소녀 뒤로 오는 사람들은 그 빛을 밟으며 걸었다.</p>
+        <p>54.5 × 79cm, Acrylic on paper</p>
+        <p>©Yoonha Byun 2018</p>
+    </div>
+
+    <div id="collage">
+        <img src="{%static 'collage/collage2.jpg' %}" width="84%">
+    </div>
+
+    <div id="left-right-button">
+        <div id="left">
+            <a href="#">&lt;</a>
+        </div>
+        <div id="right">
+            <a href="#">&gt;</a>
+        </div>
+    </div>
+
+
+</div>
+
+<div id="content-whole">
+    <div id="content-left">
+  <div class="content-item">
+      <div class="image">
+        <a href="{% url 'main:collage1' %}"><img src="{% static 'collage/collage1.jpg' %}" width="100%"  alt="collage1"></a>
+        <div class="text">
+            <a href="{% url 'main:collage1' %}">
+                <h2>증기</h2>
+                <h3>&mdash; view &mdash;</h3>
+            </a>
+        </div>
+      </div>
+      <div class="image">
+        <a href="{% url 'main:collage4' %}"><img src="{% static 'collage/collage4.jpg' %}" width="100%" alt="collage4"></a>
+        <div class="text">
+            <a href="{% url 'main:collage4' %}">
+                <h2>눈 내리는 봄</h2>
+                <h3>&mdash; view &mdash;</h3>
+            </a>
+        </div>
+      </div>
+      <div class="image">
+        <a href="{% url 'main:collage7' %}"><img src="{% static 'collage/collage7.jpg' %}" width="100%" alt="collage7"></a>
+        <div class="text">
+            <a href="{% url 'main:collage7' %}">
+                <h2>새벽녘</h2>
+                <h3>&mdash; view &mdash;</h3>
+            </a>
+        </div>
+      </div>
+      <div class="image">
+        <a href="{% url 'main:collage10' %}"><img src="{% static 'collage/collage10.jpg' %}" width="100%" alt="collage10"></a>
+        <div class="text">
+            <a href="{% url 'main:collage10' %}">
+                <h2>우주를 닦다</h2>
+                <h3>&mdash; view &mdash;</h3>
+            </a>
+        </div>
+      </div>
+  </div>
+</div>
+    <div id="content-center">
+  <div class="content-item">
+      <div class="image">
+        <a href="{% url 'main:collage2' %}"><img src="{% static 'collage/collage2.jpg' %}" width="100%"  alt="collage2"></a>
+        <div class="text">
+            <a href="{% url 'main:collage2' %}">
+                <h2>쏟아지는 빛</h2>
+                <h3>&mdash; view &mdash;</h3>
+            </a>
+        </div>
+      </div>
+      <div class="image">
+        <a href="{% url 'main:collage5' %}"><img src="{% static 'collage/collage5.jpg' %}" width="100%" alt="collage5"></a>
+        <div class="text">
+             <a href="{% url 'main:collage5' %}">
+                <h2 style="width:300px;">피어나는 마음</h2>
+                <h3>&mdash; view &mdash;</h3>
+            </a>
+        </div>
+      </div>
+      <div class="image">
+        <a href="{% url 'main:collage8' %}"><img src="{% static 'collage/collage8.jpg' %}" width="100%" alt="collage8"></a>
+        <div class="text">
+            <a href="{% url 'main:collage8' %}">
+                <h2>연인</h2>
+                <h3>&mdash; view &mdash;</h3>
+            </a>
+        </div>
+      </div>
+      <div class="image">
+        <a href="{% url 'main:collage11' %}"><img src="{% static 'collage/collage11.jpg' %}" width="100%" alt="collage11"></a>
+        <div class="text">
+            <a href="{% url 'main:collage11' %}">
+                <h2>Flower Shop</h2>
+                <h3>&mdash; view &mdash;</h3>
+            </a>
+        </div>
+      </div>
+  </div>
+</div>
+    <div id="content-right">
+  <div class="content-item">
+      <div class="image">
+        <a href="{% url 'main:collage3' %}"><img src="{% static 'collage/collage3.jpg' %}" width="100%"  alt="collage3"></a>
+        <div class="text">
+            <a href="{% url 'main:collage3' %}">
+                <h2>마음의 크기</h2>
+                <h3>&mdash; view &mdash;</h3>
+            </a>
+        </div>
+      </div>
+      <div class="image">
+        <a href="{% url 'main:collage6' %}"><img src="{% static 'collage/collage6.jpg' %}" width="100%" alt="collage6"></a>
+        <div class="text">
+            <a href="{% url 'main:collage6' %}">
+                <h2>마음의 달</h2>
+                <h3>&mdash; view &mdash;</h3>
+            </a>
+        </div>
+      </div>
+      <div class="image">
+        <a href="{% url 'main:collage9' %}"><img src="{% static 'collage/collage9.jpg' %}" width="100%" alt="collag9"></a>
+        <div class="text">
+            <a href="{% url 'main:collage9' %}">
+                <h2>폭포</h2>
+                <h3>&mdash; view &mdash;</h3>
+            </a>
+        </div>
+      </div>
+      <div class="image">
+        <a href="{% url 'main:collage12' %}"><img src="{% static 'collage/collage12.jpg' %}" width="100%" alt="collage12"></a>
+        <div class="text">
+            <a href="{% url 'main:collage12' %}">
+                <h2 style="width:300px;">Heavenly Girl</h2>
+                <h3>&mdash; view &mdash;</h3>
+            </a>
+        </div>
+      </div>
+  </div>
+</div>
+</div>
+{% endblock %}

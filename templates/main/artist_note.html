@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+{% load static %}
+{% block head %}
+
+<head>
+    <title>Artist Note ― Yoonha Byun</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'artist_note/artist_note.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@367&display=swap" rel="stylesheet">
+</head>
+
+{% endblock %}
+{% block content %}
+<body>
+<h1>YOONHA BYUN</h1>
+<div id="image"><img src="{% static 'artist_note/yoonha.jpg' %}" alt="yoonha" width="80%"></div>
+
+<div id="write">
+    <h2>그림 그리는 소설가</h2>
+    <br>
+    <p>저는 달콤한 맛을 보여주고 싶어요. 세상 사는 게 다들 팍팍하잖아요? 그런 삶 속에서, 보고만 있어도 쉼이 되는 그림을 그리고 싶었어요. 달달한 거를 볼 때면 기분이 몽글몽글해지고, 먹어보고 싶고, 이상하게 기분이 좋아지지 않아요? 저는 사실 달콤한 거를 싫어하지만, 바라볼 때면 참 기분이 좋아요. 신기하죠. 그 따뜻한 음식을 사람들에게 보여주고 싶더라고요.
+    <br>
+    <br>
+    저는 여자를 그려요. 여자의 감정은 색감으로 표현되죠. 따스한 파스텔 톤이 그윽히 깔려 있어요. 각자 바라는 이상향이 다르잖아요. 그 이상향을 그림으로 표현하고 싶었어요. 개인의 유토피아는 사람마다 어떻게 다를까요?
+    <br>
+    <br>
+    제가 바라보는 저만의 유토피아를, 인물을 통해 그림으로 풀어내요. 그 그림은 달콤한 색이고 맛이죠. 저는 그 그림을 그려요.
+    <br>
+    <br>
+    식물이 많은 까닭은, 제가 바라보는 유토피아가 자연적이기 때문이에요. 자연 안에는 에너지가 넘치죠. 저는 그 에너지를 표현하고 싶어요.
+    </p>
+</div>
+<br>
+<br>
+<br>
+<div id="foot">
+
+<a href="#" id="fuck">
+    <img src="{%static 'artist_note/instagram.png'%}" id="imm">
+</a>
+
+<a href="#">
+    <img src="{%static 'artist_note/brunch.png'%}" id="imm">
+</a>
+
+</div>
+<br>
+</body>
+{% endblock %}
