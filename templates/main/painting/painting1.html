@@ -2,6 +2,9 @@
 {% extends 'base.html' %}
 {% load static %}
 
+{% block head %}
+    <title>Yoonha Byun ― 예술가의 발</title>
+{% endblock %}
 
 {% block content %}
 <link rel="stylesheet" type="text/css" href="{% static 'collage/collagecss.css' %}">
@@ -18,10 +21,10 @@
 
     <div id="left-right-button">
         <div id="left">
-            <a href="#">&lt;</a>
+            <a href="{% url 'main:painting10' %}">&lt;</a>
         </div>
         <div id="right">
-            <a href="#">&gt;</a>
+            <a href="{% url 'main:painting2' %}">&gt;</a>
         </div>
     </div>
 

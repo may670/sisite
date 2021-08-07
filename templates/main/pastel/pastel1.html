@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 {% extends 'base.html' %}
 {% load static %}
-
+{% block head %}
+    <title>Yoonha Byun ― 빵</title>
+{% endblock %}
 
 {% block content %}
 <link rel="stylesheet" type="text/css" href="{% static 'collage/collagecss.css' %}">
@@ -21,7 +23,7 @@
             <a href="#">&lt;</a>
         </div>
         <div id="right">
-            <a href="#">&gt;</a>
+            <a href="{% url 'main:pastel' %}">&gt;</a>
         </div>
     </div>
 

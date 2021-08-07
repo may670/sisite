@@ -1,13 +1,91 @@
 <!DOCTYPE html>
 {% extends 'base.html' %}
 {% load static %}
-<head>
-    <meta charset="UTF-8">
-    <title>Artist Note ― Yoonha Byun</title>
-</head>
+
+{% block head %}
+    <title>About ― Yoonha Byun</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'about/about.css' %}">
+{% endblock %}
+
 {% block content %}
 <body>
-<h1>YOONHA BYUN</h1>
+<div class="wrapbody">
+<div class="info">
+    <h1>Info</h1>
+    <p>yoonhabyun@gmail.com</p>
+</div>
+<br>
+<div class="about">
+    <h1>About</h1>
+    <p><span style="font-weight:bold;">변윤하</span>는 페이퍼커팅 기법을 이용해 동화, 사람의 내면 등을 주제로 스토리텔링 작업을 한다.<br>
+커팅 작업을 바탕으로 입체조형물을 설치하고, 인물 위주로 작업한다.</p>
+</div>
+<br><br>
+<div class="education">
+    <p style="font-weight:bold;"> 학력 </p>
+    <p>2014-2018 School of Visual Arts 일러스트레이션 졸업 <br>
+        2019- 홍익대학교 일반대학원 회화과 재학중</p>
+</div>
+<br><br>
+<div class="exhibition_solo">
+    <p style="font-weight:bold;">개인전</p>
+    <p>2018. 12 "마음의 색깔"  인사동</p>
+</div>
+<br><br>
+<div class="exhibition_group">
+    <p style="font-weight:bold;">단체전</p>
+    <p>2020. 07 "맛있는 전시"  을지로<br>
 
+2019. 12 GPS전 홍대 현대미술관<br>
+
+2019. 12 황금과 유약과 몰약전 인사동<br>
+
+2019. 12 “Conte de Printemps" 파리<br>
+
+2018. 12 황금과 유약과 몰약전 인사동<br>
+
+2017. 05 "Beautiful Losers" 뉴욕</p>
+</div>
+<br><br>
+<div class="workshop">
+    <p style="font-weight:bold;">워크샵</p>
+    <p>봉사단체 <또봄> 페이퍼커팅 원데이 클래스 <br>
+중구청 &lt;행복&gt; 워크샵 진행</p>
+</div>
+<br><br>
+
+<!--영어-->
+<div class="about">
+    <p>
+        <span style="font-weight:bold;">Yoonha Byun</span> is an illustrator based in Seoul. She graduated from SVA(School of Visual Arts).
+    </p>
+</div>
+<br><br>
+<div class="education">
+    <p style="font-weight:bold;">Educaton</p>
+    <p>2019- M.F.A. Hong Ik University Graduate School, Painting, Seoul, Korea <br>
+2014-2018 B.F.A. School of Visual Arts, Illustration, New York, NY</p>
+</div>
+<br><br>
+<div class="solo_exhibition">
+    <p style="font-weight:bold;">Solo Exhibition</p>
+    <p>2018 “Color of Mind”, Seoul</p>
+</div>
+<br><br>
+<div class="group_exhibition">
+    <p style="font-weight:bold;">Group Exhibition</p>
+    <p>2017 “Beautiful Losers”, SVA Thesis Show, New York<br>
+
+2018 “Gold and Frankincense and Myrrh”, Seoul<br>
+
+2019 “Conte de Printemps", Paris</p>
+</div>
+<br>
+
+<p style="font-size:15px;">
+@unabyun
+</p>
+</div>
 </body>
+
 {% endblock %}

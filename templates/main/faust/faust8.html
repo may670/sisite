@@ -2,6 +2,9 @@
 {% extends 'base.html' %}
 {% load static %}
 
+{% block head %}
+    <title>Yoonha Byun ― Faust 8</title>
+{% endblock %}
 
 {% block content %}
 <link rel="stylesheet" type="text/css" href="{% static 'faust/faustcss.css' %}">
@@ -18,10 +21,10 @@
 
     <div id="left-right-button">
         <div id="left">
-            <a href="#">＜</a>
+            <a href="{% url 'main:faust7' %}">&lt;</a>
         </div>
         <div id="right">
-            <a href="#">＞</a>
+            <a href="{% url 'main:faust9' %}#">&gt;</a>
         </div>
     </div>
 

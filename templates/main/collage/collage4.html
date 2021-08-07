@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 {% extends 'base.html' %}
 {% load static %}
-
+{% block head %}
+    <title>Yoonha Byun ― 눈 내리는 봄</title>
+{% endblock %}
 
 {% block content %}
-<link rel="stylesheet" type="text/css" href="{% static 'collagecss.css' %}">
-<link rel="stylesheet" type="text/css" href="{% static 'collage.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'collage/collagecss.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'collage/collage.css' %}">
 
 <div id="exp-wrap">
     <div id="explanation">
@@ -23,10 +25,10 @@
 
     <div id="left-right-button">
         <div id="left">
-            <a href="#">&lt;</a>
+            <a href="{% url 'main:collage3' %}">&lt;</a>
         </div>
         <div id="right">
-            <a href="#">&gt;</a>
+            <a href="{% url 'main:collage5' %}">&gt;</a>
         </div>
     </div>
 

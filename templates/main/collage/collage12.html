@@ -2,14 +2,16 @@
 {% extends 'base.html' %}
 {% load static %}
 
-
+{% block head %}
+    <title>Yoonha Byun ― Heavenly Girl</title>
+{% endblock %}
 {% block content %}
-<link rel="stylesheet" type="text/css" href="{% static 'ccollage/collagecss.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'collage/collagecss.css' %}">
 <link rel="stylesheet" type="text/css" href="{% static 'collage/collage.css' %}">
 
 <div id="exp-wrap">
     <div id="explanation">
-        <p style="font-size:40px; margin-bottom:3px;">Heavenly girl</p>
+        <p style="font-size:40px; margin-bottom:3px;">Heavenly Girl</p>
         <p style='width:100%;line-height:1.6em;'>She has beautiful hair and her body is shinning like stars. Sometimes she gives water to the world in herself. Colorful trees are full of songs. You just need one step to reach the moon from your house. Her name is Heaven.<br>
         <p>16 × 20 inch</p>
         <p>©Yoonha Byun 2017</p></p>
@@ -22,10 +24,10 @@
 
     <div id="left-right-button">
         <div id="left">
-            <a href="#">&lt;</a>
+            <a href="{% url 'main:collage11' %}">&lt;</a>
         </div>
         <div id="right">
-            <a href="#">&gt;</a>
+            <a href="{% url 'main:collage' %}">&gt;</a>
         </div>
     </div>
 

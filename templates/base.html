@@ -19,6 +19,7 @@
   </style>
   {% block head %}
   {% endblock %}
+  <link rel="stylesheet" type="text/css" href="{% static 'header.css' %}">
 </head>
 
 
@@ -38,6 +39,7 @@
     <div class="menu-item"><a href="{%url 'main:about'%}">ABOUT</a></div>
   </div>
 </div>
+
 {% block content %}
 {% endblock %}
 <!-- 기본 템플릿 안에 삽입될 내용 End -->
