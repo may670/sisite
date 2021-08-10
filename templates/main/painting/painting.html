@@ -3,116 +3,131 @@
 
 {% block head %}
     <title>Painting ― Yoonha Byun</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'collage/collage.css' %}">
 {% endblock %}
 
 {% block content %}
-<link rel="stylesheet" type="text/css" href="{% static 'collage/collage.css' %}">
-<link rel="stylesheet" type="text/css" href="{% static 'collage/collagecss.css' %}">
+
+
 <body>
 
 <div id="content-whole">
-    <div id="content-left">
-  <div class="content-item">
+  <div id="content-left">
+    <div class="content-item">
       <div class="image">
         <a href="{% url 'main:painting1' %}"><img src="{% static 'painting/painting1.jpg' %}" width="100%"  alt="painting1"></a>
-        <div class="text">
-            <a href="{% url 'main:painting1' %}">
-                <h2>예술가의 발</h2>
-                <h3>&mdash; view &mdash;</h3>
-            </a>
-        </div>
       </div>
+      <div class="text">
+        <a href="{% url 'main:painting1' %}">
+          <h2 style="font-size:44px;font-weight:300;width:300px;">예술가의 발</h2>
+          <h3 style="font-size:16px;font-weight:300;">&mdash; view &mdash;</h3>
+        </a>
+      </div>
+    </div>
+    <div class="content-item">
       <div class="image">
-        <a href="{% url 'main:painting4' %}"><img src="{% static 'painting/painting4.jpg' %}" width="100%" alt="painting4"></a>
-        <div class="text">
-            <a href="{% url 'main:painting4' %}">
-                <h2>검은 비</h2>
-                <h3>&mdash; view &mdash;</h3>
-            </a>
-        </div>
+        <a href="{% url 'main:painting4' %}"><img src="{% static 'painting/painting4.jpg' %}" width="100%"  alt="painting4"></a>
       </div>
+      <div class="text">
+        <a href="{% url 'main:painting4' %}">
+          <h2 style="font-size:44px;font-weight:300; width:300px;">검은 비</h2>
+          <h3 style="font-size:16px;font-weight:300;">&mdash; view &mdash;</h3>
+        </a>
+      </div>
+    </div>
+    <div class="content-item">
       <div class="image">
-        <a href="{% url 'main:painting7' %}"><img src="{% static 'painting/painting7.jpg' %}" width="100%" alt="painting7"></a>
-        <div class="text">
-            <a href="{% url 'main:painting7' %}">
-                <h2>신부</h2>
-                <h3>&mdash; view &mdash;</h3>
-            </a>
-        </div>
+        <a href="{% url 'main:painting7' %}"><img src="{% static 'painting/painting7.jpg' %}" width="100%"  alt="painting7"></a>
       </div>
+      <div class="text">
+        <a href="{% url 'main:painting7' %}">
+          <h2 style="font-size:44px;font-weight:300;">신부</h2>
+          <h3 style="font-size:16px;font-weight:300;">&mdash; view &mdash;</h3>
+        </a>
+      </div>
+    </div>
   </div>
-</div>
-    <div id="content-center">
-  <div class="content-item">
+  <div id="content-center">
+    <div class="content-item">
       <div class="image">
         <a href="{% url 'main:painting2' %}"><img src="{% static 'painting/painting2-1.jpg' %}" width="100%"  alt="painting2"></a>
-        <div class="text">
-            <a href="{% url 'main:painting2' %}">
-                <h2>푸른 소녀</h2>
-                <h3>&mdash; view &mdash;</h3>
-            </a>
-        </div>
       </div>
+      <div class="text">
+        <a href="{% url 'main:painting2' %}">
+          <h2 style="font-size:44px;font-weight:300;width:300px;">푸른 소녀</h2>
+          <h3 style="font-size:16px;font-weight:300;">&mdash; view &mdash;</h3>
+        </a>
+      </div>
+    </div>
+    <div class="content-item">
       <div class="image">
-        <a href="{% url 'main:painting5' %}"><img src="{% static 'painting/painting5.jpg' %}" width="100%" alt="painting5"></a>
-        <div class="text">
-             <a href="{% url 'main:painting5' %}">
-                <h2 style="width:300px;">결합1</h2>
-                <h3>&mdash; view &mdash;</h3>
-            </a>
-        </div>
+        <a href="{% url 'main:painting5' %}"><img src="{% static 'painting/painting5.jpg' %}" width="100%"  alt="painting5"></a>
       </div>
+      <div class="text">
+        <a href="{% url 'main:painting5' %}">
+          <h2 style="font-size:44px;font-weight:300; width:300px;">결합 1</h2>
+          <h3 style="font-size:16px;font-weight:300;">&mdash; view &mdash;</h3>
+        </a>
+      </div>
+    </div>
+    <div class="content-item">
       <div class="image">
-        <a href="{% url 'main:painting8' %}"><img src="{% static 'painting/painting8.jpg' %}" width="100%" alt="painting8"></a>
-        <div class="text">
-            <a href="{% url 'main:painting8' %}">
-                <h2>작은 씨앗</h2>
-                <h3>&mdash; view &mdash;</h3>
-            </a>
-        </div>
+        <a href="{% url 'main:painting8' %}"><img src="{% static 'painting/painting8.jpg' %}" width="100%"  alt="painting8"></a>
       </div>
+      <div class="text">
+        <a href="{% url 'main:painting8' %}">
+          <h2 style="font-size:44px;font-weight:300;">작은 씨앗</h2>
+          <h3 style="font-size:16px;font-weight:300;">&mdash; view &mdash;</h3>
+        </a>
+      </div>
+    </div>
+    <div class="content-item">
       <div class="image">
-        <a href="{% url 'main:painting10' %}"><img src="{% static 'painting/painting10.jpg' %}" width="100%" alt="painting10"></a>
-        <div class="text">
-            <a href="{% url 'main:painting10' %}">
-                <h2 style="width:300px;">빨간 머리 소녀</h2>
-                <h3>&mdash; view &mdash;</h3>
-            </a>
-        </div>
+        <a href="{% url 'main:painting10' %}"><img src="{% static 'painting/painting10.jpg' %}" width="100%"  alt="painting10"></a>
       </div>
+      <div class="text">
+        <a href="{% url 'main:painting10' %}">
+          <h2 style="font-size:44px;font-weight:300;width:300px;">빨간 머리 소녀</h2>
+          <h3 style="font-size:16px;font-weight:300;">&mdash; view &mdash;</h3>
+        </a>
+      </div>
+    </div>
   </div>
-</div>
-    <div id="content-right">
-  <div class="content-item">
+  <div id="content-right">
+    <div class="content-item">
       <div class="image">
         <a href="{% url 'main:painting3' %}"><img src="{% static 'painting/painting3.jpg' %}" width="100%"  alt="painting3"></a>
-        <div class="text">
-            <a href="{% url 'main:painting3' %}">
-                <h2>녹색 소녀</h2>
-                <h3>&mdash; view &mdash;</h3>
-            </a>
-        </div>
       </div>
+      <div class="text">
+        <a href="{% url 'main:painting3' %}">
+          <h2 style="font-size:44px;font-weight:300;width:300px;">녹색 소녀</h2>
+          <h3 style="font-size:16px;font-weight:300;">&mdash; view &mdash;</h3>
+        </a>
+      </div>
+    </div>
+    <div class="content-item">
       <div class="image">
-        <a href="{% url 'main:painting6' %}"><img src="{% static 'painting/painting6.jpg' %}" width="100%" alt="painting6"></a>
-        <div class="text">
-            <a href="{% url 'main:painting6' %}">
-                <h2>결합 2</h2>
-                <h3>&mdash; view &mdash;</h3>
-            </a>
-        </div>
+        <a href="{% url 'main:painting6' %}"><img src="{% static 'painting/painting6.jpg' %}" width="100%"  alt="painting6"></a>
       </div>
+      <div class="text">
+        <a href="{% url 'main:painting6' %}">
+          <h2 style="font-size:44px;font-weight:300;">결합 2</h2>
+          <h3 style="font-size:16px;font-weight:300;">&mdash; view &mdash;</h3>
+        </a>
+      </div>
+    </div>
+    <div class="content-item">
       <div class="image">
-        <a href="{% url 'main:painting9' %}"><img src="{% static 'painting/painting9.jpg' %}" width="100%" alt="collag9"></a>
-        <div class="text">
-            <a href="{% url 'main:painting9' %}">
-                <h2>동화</h2>
-                <h3>&mdash; view &mdash;</h3>
-            </a>
-        </div>
+        <a href="{% url 'main:painting9' %}"><img src="{% static 'painting/painting9.jpg' %}" width="100%"  alt="painting9"></a>
       </div>
+      <div class="text">
+        <a href="{% url 'main:painting9' %}">
+          <h2 style="font-size:44px;font-weight:300;">동화</h2>
+          <h3 style="font-size:16px;font-weight:300;">&mdash; view &mdash;</h3>
+        </a>
+      </div>
+    </div>
   </div>
-</div>
 </div>
 
 </body>

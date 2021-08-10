@@ -1,6 +1,3 @@
-body {
-margin:0 auto;
-}
 
 h1,#image {
 text-align:center;
@@ -8,7 +5,7 @@ text-align:center;
 
 #write {
 width:45%;
-margin:0 auto;
+margin: 30px auto;
 font-family: "Helvetica Neue",Helvetica,sans-serif;
 font-weight: normal;
 line-height: 1.67em;
@@ -20,8 +17,18 @@ font-style: normal;
 color: #454545;
 }
 
+#title {
+float:left;
+font-size:30px;
+margin-bottom:50px;
+}
+
 #write h2 {
 font-size:30px;
+}
+
+#write p {
+clear:both;
 }
 
 #imm {
@@ -31,4 +38,8 @@ padding:3px;
 
 #foot {
 text-align:center;
+}
+
+write p {
+font-weight:bold;
 }

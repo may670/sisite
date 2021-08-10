@@ -31,19 +31,18 @@
 </div>
 
 <div id="content-whole">
-    <div id="content-left">
-  <div class="content-item">
+  <div id="content-left">
+    <div class="content-item">
       <div class="image">
         <a href="{% url 'main:pastel1' %}"><img src="{% static 'pastel/pastel1.jpeg' %}" width="100%"  alt="pastel1"></a>
-        <div class="text">
-            <a href="{% url 'main:pastel1' %}">
-                <h2>빵</h2>
-                <h3>&mdash; view &mdash;</h3>
-            </a>
-        </div>
       </div>
+      <div class="text">
+        <a href="{% url 'main:pastel1' %}">
+          <h2 style="font-size:44px;font-weight:300;">빵</h2>
+          <h3 style="font-size:16px;font-weight:300;">&mdash; view &mdash;</h3>
+        </a>
+      </div>
+    </div>
   </div>
-</div>
-
 </div>
 {% endblock %}
