@@ -1,0 +1,7 @@
+#wrapper {
+width:100%;
+background-color:yellow;
+display:flex;
+felx-direction:column;
+align-items:center;
+}
