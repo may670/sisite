@@ -190,6 +190,10 @@ LOGGING = {
             'level': 'INFO',
             'propagate': False,
         },
+        'main': {
+            'handlers': ['console', 'file'],
+            'level': 'INFO',
+        }
     }
 }
 
