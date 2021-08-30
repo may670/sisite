@@ -5,6 +5,7 @@ def home(request) :
     """
     메인화면 출력
     """
+    3/0
     return render(request, 'main/faust/home.html')
 
 def faust1(request) :
