@@ -6,6 +6,7 @@ def home(request) :
     """
     메인화면 출력
     """
+    3/0
     #logger.info('INFO 레벨로 출력')
     return render(request, 'main/faust/home.html')
 
