@@ -182,8 +182,9 @@ LOGGING = {
             'propagate': False,
         },
         'main': {
-            'handlers': ['console', 'file'],
+            'handlers': ['console'],
             'level': 'INFO',
+
         }
     }
 }
