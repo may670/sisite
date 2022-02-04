@@ -1,3 +1,53 @@
+body {
+  animation: fadein 1s;
+  -moz-animation: fadein 1s; /* Firefox */
+  -webkit-animation: fadein 1s; /* Safari and Chrome */
+  -o-animation: fadein 1s; /* Opera */
+}
+
+#content-whole {
+animation: fadein 1s;
+-moz-animation: fadein 1s; /* Firefox */
+-webkit-animation: fadein 1s; /* Safari and Chrome */
+-o-animation: fadein 1s; /* Opera */
+}
+
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+/////
+
 div p {
 font-weight:400;
 }
@@ -13,4 +63,13 @@ margin-top:100px;
 
 div h1 {
 font-size:40px;
+}
+
+a {
+text-decoration:none;
+}
+
+#header #menu .menu-item.ABOUT a {
+color:black;
+border-bottom:1px solid black;
 }

@@ -1,7 +1,4 @@
 
-h1,#image {
-text-align:center;
-}
 
 #write {
 width:45%;
@@ -40,6 +37,22 @@ padding:3px;
 text-align:center;
 }
 
-write p {
-font-weight:bold;
+a {
+text-decoration:none;
+}
+
+#sisname {
+font-size:40px;
+text-align:center;
+margin-top:100px;
+}
+
+#sispic {
+text-align:center;
+}
+
+
+#header #menu .menu-item.ARTIST-NOTE a {
+color:black;
+border-bottom:1px solid black;
 }

@@ -100,3 +100,8 @@ padding:0;
 color:white;
 }
 
+
+#header #menu .menu-item.PAPERCUTS a {
+color:black;
+border-bottom:1px solid black;
+}
