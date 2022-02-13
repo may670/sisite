@@ -68,7 +68,9 @@ margin-top:0px !important;
 
 
 /* 작은 화면 전용 */
-
-@media (max-width:1150px) {
-#header {background-color:yellow;}
+@media (min-width:641px) {
+#mheader {display:none;}
+}
+@media (max-width:640px) {
+#header {display:none;}
 }
